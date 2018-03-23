@@ -1,0 +1,49 @@
+body {
+    background: #DAC8C2;
+}
+
+.accordion {
+    margin: auto;
+    padding: 50px;
+    max-width: 600px;
+    font: 20px/22px Helvetica, Arial, sens-serif;
+}
+
+.accordion__item {
+    margin: 0;
+    list-style: none;
+}
+
+.accordion__item-toggle {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background: #A6837D;
+    transition: background .5s ease-in-out,
+        color .5s ease-in-out;
+}
+
+.accordion__item-toggle:hover {
+    color: #fff;
+    background: #714A48;
+}
+
+.accordion__item-toggle:active {
+    opacity: .8;
+}
+
+.accordion__item-content {
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.accordion__item_open .accordion__item-content {
+    max-height: 150px;
+}
+
+.accordion__item-text {
+    margin: 0;
+    padding: 10px;
+}
